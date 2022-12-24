@@ -28,7 +28,7 @@ fitur fitur lainnya
 
 persiapan untuk run laravel project
 
-1. pastikan memiliki npm untuk menjalankan modul laravel/ui php. memiliki perintah composer npm install
+1. pastikan memiliki npm untuk menjalankan modul laravel/ui php. memiliki perintah npm install
 	run( npm run dev )
 2. configurasi data base
 	->di .env file konfigurasikan data base yang kalian miliki
