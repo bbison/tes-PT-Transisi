@@ -1,0 +1,42 @@
+Dalam Gity hup unu berisi beberapa file
+1. Data Base Company(floder) berisi file laravel fitur sudah sesuai dengan yang ditentukan
+2. Bagian1.php berisi php dasar 1
+3. Bagian2.php berisi php dasar 2
+4. Bagian2.php berisi php dasar 3
+
+untuk testing import exel ada 2 file 
+1. company.xlsx untuk umport data perusahaan
+2. DAFTAR-SEMINAR.xlsx untuk testing import data Pegawai sudah foreignId ke table Perusahaan
+
+untuk data exel masih berdasarkan row. sebenarnya bisa menggunakan sesuai nama rownya.
+dalam laravel juga memiliki query scope untuk mempermudah fitur pencarian yang komplex.
+laravel juga meniapkan fitur untuk mengatasi masalah N+1. 
+
+fitur fitur lainnya
+1. validasi error nilai lama tidak hilang kecuali gambar.
+2. pencarian menggunakan ajax.
+3. data perusahaan tidak bisa di hapus jika ada employee yamh foreign id ke id perusahaan.
+4. upload logo perusahaan menggunakan fitur image preview sebelum data ditambahkan
+5. ketika menambahkan data pegawai, hanya bisa foreign id ke company yang sudah terdaftar di database.
+6. setiap route memiliki middleware auth. jadi yang belum login tidak bisa mengakses halaman melalui url
+7. dengan mudah bisa download data employee di masing masing perusahaan. tinggal lihat detail perusahaan trus klik download
+8. user interface menggunakan Bootstraps. untuk colaborasi dengan vue.js maupun react.js bisa mengunakan inertia package milik laravel
+9. untuk login masuk dengan email admin@transisi.id password transisi
+10. package export ke pd dengan domppdf
+11. package untuk import data exel menggunakan maatwebsite/exel. selain import juga bisa export ke dari data base ke exel.
+12. validasi di bagian backend. jadi tidak bisa dimanipulasi dengan inspec element,
+
+persiapan untuk run laravel project
+
+1. pastikan memiliki npm untuk menjalankan modul laravel/ui php. memiliki perintah composer npm install
+	run( npm run dev )
+2. configurasi data base
+	->di .env file konfigurasikan data base yang kalian miliki
+	-> jika sudah terhubung dengan database bisa migrate data basenya untuk generate user login(php artisan migrate / php artisan migrate:fresh)
+	->laravel juga memiliki fitur faker yang mempermudah kuta untuk membuat data dummy saat mendevelop aplikasi
+4. jalankan server laravel (php artisan serve)
+5. akan muncul halaman basic laravel. dikanan atas akan terdapat login dan register 
+6. setelah login maka akan muncul di halaman utama. 
+7. silahakn bisa cek fitur fitur yang ada di situ
+
+
